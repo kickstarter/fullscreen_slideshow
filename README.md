@@ -4,11 +4,11 @@ A handy all-in-one fullscreen slideshow, extracted from <a href="https://www.kic
 2013 year in review</a>.
 
 # Features
-- Mobile friendly
-- URL's allow deep linking to individual slides
-- Background videos in slides are lazy and predictively loaded
-- Page background color can be controlled via a slide attribute, allowing subtle rainbow effects as you progress through the slideshow
-- Full screen modal dialogs can embed arbitrary pages via iframe
+- Mobile friendly.
+- URL's allow deep linking to individual slides.
+- Background videos in slides are lazy and predictively loaded. On mobile they're not loaded at all, to conserve bandwidth.
+- Page background color can be controlled via a slide attribute, allowing subtle rainbow effects as you progress through the slideshow.
+- Slides can open full screen modal dialogs which can embed arbitrary pages via iframe.
 
 ## Howto
 
