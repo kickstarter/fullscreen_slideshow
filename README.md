@@ -51,4 +51,4 @@ For example:
 
 ---
 
-@license MIT http://www.opensource.org/licenses/mit-license.php
+license MIT http://www.opensource.org/licenses/mit-license.php
