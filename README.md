@@ -3,6 +3,8 @@
 A handy all-in-one fullscreen slideshow, extracted from <a href="https://www.kickstarter.com/year/2013" target="_blank">Kickstarter's
 2013 year in review</a>.
 
+[See it in action.](http://kickstarter.github.io/fullscreen_slideshow)
+
 # Features
 - Mobile friendly.
 - URL's allow deep linking to individual slides.
