@@ -1,0 +1,31 @@
+
+@mixin break($breakpoint){
+  @if $breakpoint == 'small' {
+    @content;
+  }
+  @if $breakpoint == 'medium' {
+    @media (min-width: 768px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'large' {
+    @media (min-width: 1152px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'x-large' {
+    @media (min-width: 1536px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'tall' {
+    @media (min-height: 640px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'x-tall' {
+    @media (min-height: 960px){
+      @content;
+    }
+  }
+}

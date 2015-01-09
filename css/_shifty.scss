@@ -1,0 +1,18 @@
+
+.shifty {
+  overflow: hidden;
+  height: 100%;
+  .shifty-inner {
+    height: 200%;
+    position: relative;
+    @include prefixer(transition, top .3s ease);
+  }
+  .shifty-content {
+    position: relative;
+    height: 50%;
+  }
+  .shifty-menu { height: 50%; }
+  &.show-menu .shifty-inner, &:target .shifty-inner {
+    top: -100%;
+  } 
+}

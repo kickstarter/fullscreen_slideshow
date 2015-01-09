@@ -1,0 +1,56 @@
+// Background video
+
+.bg-video-wrap {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  min-width: 1920px;
+  min-height: 1080px;
+  @include prefixer(transform, translateZ(0));
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: -50%;
+  }
+  &.bg-video-center {
+    right: -50%;
+    video {
+      left: -50%;
+    }
+  }
+  &.bg-video-left {
+    left: 0;
+    video {
+      left: 0;
+    }
+  }
+  &.bg-video-right {
+    right: 0;
+    float: right;
+    video {
+      right: 0;
+    }
+  }
+  &.bg-video-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    video {
+      top: auto;
+      bottom: 0;
+    }
+  }
+  &.bg-video-top {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    video {
+      top: 0;
+      bottom: auto;
+    }
+  }
+}
+
+

@@ -1,0 +1,115 @@
+// Type
+
+.helvetica-condensed {
+  font-family: HelveticaNeueLTPro-BlkCn, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: normal;
+}
+h1, p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+.lh5 {
+  line-height: 5*$space;
+}
+
+.h0r {
+  font-size: 2rem;
+  line-height: .9;
+  -webkit-font-smoothing: antialiased;
+}
+@include break(medium){
+  .h0r {
+    font-size: 4rem;
+  }
+}
+@include break(large){
+  .h0r {
+    font-size: 6rem;
+  }
+}
+@include break(x-large){
+  .h0r {
+    font-size: 8rem;
+  }
+}
+
+.thirteen-wrap { 
+  width: 256px;
+  height: 256px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+@include break(medium){
+  .thirteen-wrap {
+    width: 512px;
+    height: 512px;
+  }
+}
+@include break(large){
+  .thirteen-wrap {
+    width: 768px;
+    height: 768px;
+  }
+}
+@include break(x-large){
+  .thirteen-wrap {
+    width: 1024px;
+    height: 1024px;
+  }
+}
+
+.h1r {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+}
+@include break(medium){
+  .h1r {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
+@include break(large){
+  .h1r { font-size: 3rem; }
+}
+
+@include break(x-large) {
+  .h1r { font-size: 4rem; }
+}
+
+// @media (min-width: 2048px){
+//   .h1r { font-size: 5rem; }
+// }
+
+.h2 {
+  font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+.h3 {
+  font-size: 1.25rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.h3r { font-size: 1.25rem; }
+@include break(medium){
+  .h3r { font-size: 1.5rem; }
+}
+@include break(large){
+  .h3r { font-size: 2rem; }
+}
+
+.small {
+  font-size: .75rem;
+}
+
+
+.right-align {
+  text-align: right;
+}

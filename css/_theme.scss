@@ -1,0 +1,70 @@
+// Theme
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.white { color: #fff; }
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #000; }
+.dark-green { color: $dark-green; }
+
+.bg-dynamic, .bg-dynamic-a {
+  transition: background-color .3s linear
+}
+
+.bg-cover { background-size: cover; background-position: center; }
+.bg-cover-top { background-position: top center; }
+.bg-cover-bottom { background-position: bottom center; }
+
+
+// gradient mixin
+$i: 1;
+@each $color in $year-colors {
+  .green#{$i} {
+    .bg-dynamic { background-color: $color; }
+    .bg-dynamic-a { background-color: rgba($color,.75); }
+  }
+  .link-green#{$i} {
+    color: #777;
+    &:hover {
+      color: $color;
+    }
+  }
+  $i: $i + 1;
+}
+
+@include keyframes(fill-color-fade) {
+  0%   { fill: nth($year-colors, 11); }
+  50%  { fill: nth($year-colors, 28); }
+  100% { fill: nth($year-colors, 11); }
+}
+.fill-thirteen {
+  fill: nth($year-colors, 11);
+  @include prefixer(transition, fill);
+  @include prefixer(animation, fill-color-fade 5s linear infinite);
+}
+
+// .menu-light a {
+//   color: #444;
+//   &:hover {
+//     background-color: nth($year-colors, 11);
+//     color: #fff;
+//   }
+// }
+
+.input {
+  box-sizing: border-box;
+  padding: .25rem .75rem;
+  height: 30px;
+  line-height: 30px;
+  // Theme
+  // background-color: rgba(#fff,.4);
+  border-radius: .25rem;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+

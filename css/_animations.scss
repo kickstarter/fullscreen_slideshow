@@ -1,0 +1,15 @@
+
+@include keyframes(fade-in) {
+  from {
+    @include prefixer(transform, scale(.8));
+    opacity: .6;
+  }
+  to {
+    @include prefixer(transform, scale(1));
+    opacity: 1;
+  }
+}
+.fade-in {
+  @include prefixer(animation, fade-in .8s ease);
+}
+
