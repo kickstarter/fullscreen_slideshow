@@ -19,8 +19,6 @@ $(document).ready(function(){
       is_touch = Modernizr.touch,
       flipsnap = new Flipsnap('.slideshow', {transitionDuration: 600});
 
-  mixpanel.track('YiR/2013 Initialize');
-
   flipsnap.element.addEventListener('fspointmove', function(e) {
     $('.shifty').removeClass('show-menu');
     $slides.removeClass('active');
@@ -28,7 +26,6 @@ $(document).ready(function(){
     slide = $slides[index];
     if(slide){
       location.hash = index + '-' + slide.id;
-      mixpanel.track('YiR/2013 Panel Load', { 'panel_index' : index, 'panel_name' : slide.id });
     }
     $(slide).addClass('active');
     if (!is_touch){
@@ -132,11 +129,6 @@ $(document).ready(function(){
     },500);
     index = parseInt(location.hash.split('-')[0].split('#')[1], 10);
     flipsnap.moveToPoint(index);
-  } else {
-    if (index === 0) {
-      // Want to track Panel Load on initial load, not just switching
-      mixpanel.track('YiR/2013 Panel Load', { 'panel_index' : 0, 'panel_name' : 'index' });
-    }
   }
 
   $('.js-slide-btn').click(function(e){
@@ -148,13 +140,11 @@ $(document).ready(function(){
   $('.js-slide-next').click(function(){
     closeModals();
     flipsnap.toNext();
-    mixpanel.track('YiR/2013 Next', { 'keypress' : false });
   });
 
   $('.js-slide-previous').click(function(){
     closeModals();
     flipsnap.toPrev();
-    mixpanel.track('YiR/2013 Previous', { 'keypress' : false });
   });
 
   if (!flipsnap.hasPrev()) {
@@ -172,7 +162,6 @@ $(document).ready(function(){
 
   $('.js-shifty-toggle').click(function(){
     toggleMenu();
-    mixpanel.track('YiR/2013 View All');
   });
 
   function closeModals(){
@@ -199,13 +188,11 @@ $(document).ready(function(){
     if (e.keyCode === 37) {
       closeModals();
       flipsnap.toPrev();
-      mixpanel.track('YiR/2013 Previous', { 'keypress' : true });
       return false;
     }
     if (e.keyCode === 39) {
       closeModals();
       flipsnap.toNext();
-      mixpanel.track('YiR/2013 Next', { 'keypress' : true });
       return false;
     }
     if(e.keyCode === 38 || e.keyCode === 40){
