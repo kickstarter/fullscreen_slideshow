@@ -58,8 +58,6 @@ $(document).ready(function(){
     }
   }, false);
 
-  FastClick.attach(document.body);
-
   function createVideos(){
     $($slides).each(function(i){
       var has_video = $($slides[i]).attr('data-mp4'),
