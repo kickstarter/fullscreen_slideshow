@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your Slideshow</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="webfonts/ss-standard-optimized.css" />
+  <link rel="stylesheet" href="webfonts/ss-social.css" />
+</head>
+
+<body id="twentythirteen" class="green31">
+
+  <div class="view bg-dynamic">
+    <div id="menu" class="shifty">
+      <div class="shifty-inner">
+        <div class="shifty-content">
+          <div class="slideshow no-select">
+
+            <div id="home" class="slide center"
+              data-color="green32">
+              <div class="relative table center y100 white">
+                <div class="table-cell">
+                  <h1 class="h0r helvetica-condensed caps">
+                    WELCOME<br>
+                    TO A<br>
+                    Slideshow
+                  </h1>
+                </div>
+              </div>
+              <div class="slide-footer mobile-show white">
+                <p>Swipe to start <span class="ss-icon ss-standard ss-right"></span></p>
+              </div>
+            </div>
+
+            <div id="first-text-slide"
+              class="slide white"
+              data-color="green31">
+              <div class="table y100">
+                <div class="table-cell center px2">
+                  <p class="h1r">
+                    Here's an example slide
+                    <br class="mobile-hide">
+                    with some simple text.
+                    <br class="mobile-hide">
+                    Notice how it breaks differently
+                    <br class="mobile-hide">
+                    on small screens.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="second-text-slide"
+              class="slide white"
+              data-color="green27">
+              <div class="table center y100">
+                <div class="table-cell px2">
+                  <p class="h1r">
+                    Make as many of these<br class="mobile-hide">
+                    as you like.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="first-video-slide"
+              class="slide bg-cover bg-center white"
+              style="background-image: url(images/pebble.jpg)"
+              data-color="green26"
+              data-mp4="http://d3mlfyygrfdi2i.cloudfront.net/yir2013/pebble.mp4"
+              data-webm="http://d3mlfyygrfdi2i.cloudfront.net/3f16/pebble.webm">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                You can have videos in slides.
+              </p>
+              <div class="slide-footer">
+                <a href="http://example.com" target="_blank">and maybe link to something down here</a>
+              </div>
+            </div>
+
+            <div id="second-video-slide"
+              class="slide bg-cover bg-center white"
+              style="background-image: url(images/emoji.jpg)"
+              data-color="green22"
+              data-mp4="http://d3mlfyygrfdi2i.cloudfront.net/yir2013/emoji.mp4"
+              data-webm="http://d3mlfyygrfdi2i.cloudfront.net/7d90/emoji.webm">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                Many videos can be used
+                <br class="mobile-hide">
+                in one slideshow.
+                <br class="mobile-hide">
+                They'll be loaded in sequence
+                <br class="mobile-hide">
+                as they're needed
+              </p>
+            </div>
+
+            <div id="third-video-slide"
+              class="slide bg-cover bg-center white"
+              style="background-image: url(images/helicopter.jpg)"
+              data-color="green20"
+              data-mp4="http://d3mlfyygrfdi2i.cloudfront.net/yir2013/helicopter.mp4"
+              data-webm="http://d3mlfyygrfdi2i.cloudfront.net/59bf/helicopter.webm">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                So here's another one
+              </p>
+              <div class="slide-footer">
+                <a href="https://www.kickstarter.com/projects/1156290643/atlas-a-human-powered-helicopter-for-a-historical?ref=yir2013" target="_blank">This helicopter is really pretty neat</a>
+              </div>
+            </div>
+
+            <div id="first-image-slide"
+              class="slide bg-cover bg-center white"
+              style="background-image: url(images/goldieblox.jpg)"
+              data-color="green23">
+              <p class="h1r box box-bottom center">
+                You can also have text
+                <br class="mobile-hide">
+                with a static background image.
+                <br class="mobile-hide">
+                Anything goes, really.
+              </p>
+            </div>
+
+            <div id="second-image-slide"
+              class="slide bg-cover bg-cover-top white"
+              style="background-image: url(images/happy-canes.jpg)"
+              data-color="green18">
+              <p class="h1r box box-bottom center">
+                Have fun!
+              </p>
+              <div class="slide-footer">
+                <a href="https://github.com/kickstarter/fullscreen_slideshow" target="_blank">Get the slideshow project here</a>
+              </div>
+              <div class="absolute t0 r0 p1 small">Made by Kickstarter's Design and Engineering Teams</div>
+            </div>
+
+            
+          </div>
+
+          <div class="js-slide-previous rail rail-left p1 clickable no-select mobile-hide">
+            <div class="table-cell">
+              <img src="images/arrow-left.svg" alt="left" width="24" height="48" />
+            </div>
+          </div>
+
+          <div class="js-slide-next rail rail-right right-align p1 clickable no-select mobile-hide">
+            <p class="js-coach-mark table-cell bold px2 white hide">Start</p>
+            <div class="table-cell">
+              <img src="images/arrow-right.svg" alt="right" width="24" height="48" class="" />
+            </div>
+          </div>
+
+          </div><!-- .shifty-content -->
+
+        <div class="shifty-menu scrolly menu bg-white">
+          <div class="py4">
+            <ul id="toc" class="list-simple center mb4">
+              <li><a href="#home" class="h2 lh5 block js-slide-btn link-green26">Home</a></li>
+              <li><a href="#first-text-slide" class="h2 lh5 block js-slide-btn link-green26">Some text</a></li>
+              <li><a href="#second-text-slide" class="h2 lh5 block js-slide-btn link-green25">Make as many as you like</a></li>
+              <li><a href="#first-video-slide" class="h2 lh5 block js-slide-btn link-green24">A video!</a></li>
+              <li><a href="#second-video-slide" class="h2 lh5 block js-slide-btn link-green24">The book video</a></li>
+              <li><a href="#third-video-slide" class="h2 lh5 block js-slide-btn link-green24">The helicopter video</a></li>
+              <li><a href="#first-image-slide" class="h2 lh5 block js-slide-btn link-green23">Anything goes</a></li>
+              <li><a href="#second-image-slide" class="h2 lh5 block js-slide-btn link-green22">Have fun!</a></li>
+            </ul>
+          </div>
+        </div><!-- .shifty-menu -->
+
+        </div><!-- .shifty-inner -->
+      </div><!-- .shifty -->
+
+    <div class="navbar bg-dynamic-a no-select white">
+      <div class="navbar-left left">
+        <button class="js-shifty-toggle btn mr2 bg-dynamic white">
+          <i class="ss-icon ss-standard ss-view"></i>
+          <span class="mobile-hide">View all</a>
+        </button>
+      </div>
+      <div class="navbar-right right right-align">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank" class="btn bg-dynamic">
+          <span class="ss-icon ss-social ss-facebook"></span>
+          <span class="mobile-hide">Share</span>
+        </a>
+        <a
+          href="https://twitter.com/intent/tweet?text=example+tweet+goes+here&url=http://example.com"
+          target="_blank"
+          class="btn bg-dynamic">
+        <span class="ss-icon ss-social ss-twitter"></span>
+          <span class="mobile-hide">Tweet</span>
+        </a>
+      </div>
+      <div class="helvetica-condensed h3 caps center mobile-hide">
+        Your Slideshow
+      </div>
+    </div>
+
+  </div><!-- .view -->
+
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/flipsnap.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/slideshow.js"></script>
+
+</body>
+</html>
+

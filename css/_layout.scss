@@ -1,0 +1,115 @@
+body {
+  min-width: 320px;
+}
+
+// Absolute fully flexible container 
+.view {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+// Scrollable container
+.scrolly {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Custom, persistent bottom nav bar
+.navbar {
+  position: absolute;
+  right: 0; bottom: 0; left: 0;
+  padding: $space;
+  line-height: 30px;
+}
+.navbar-left,
+.navbar-right {
+  width: 80px;
+}
+@include break(medium) {
+  .navbar-left,
+  .navbar-right {
+    width: 160px;
+  }
+}
+
+// Hit areas for left and right arrows
+.rail {
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  height: 70%;
+  display: table;
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.rail-left { left: $space; }
+.rail-right { right: $space; }
+
+.y100 { height: 100%; }
+
+.slide-footer {
+  position: absolute;
+  right: 0;
+  bottom: 4*$space;
+  left: 0;
+  padding: 2*$space;
+  height: 3*$space;
+  line-height: 3*$space;
+  text-align: center;
+  @include prefixer(transform, translateZ(0));
+}
+@include break(tall) {
+  .slide-footer {
+    bottom: 7*$space;
+    height: 4*$space;
+    line-height: 4*$space;
+  }
+}
+@include break(x-tall) {
+  .slide-footer {
+    bottom: 9*$space;
+  }
+}
+
+.mobile-show { display: none; }
+@media (max-width: 768px){
+  .mobile-show { display: block; }
+  .mobile-hide { display: none; }
+}
+
+.list-simple {
+  list-style:none;
+  padding-left: 0;
+}
+
+// Symbolset Standard Hack
+.ss-icon {
+  position: relative;
+  top: .1875em;
+}
+
+.clickable { cursor: pointer; }
+
+.no-select {
+  -webkit-touch-callout: none;
+  @include prefixer(user-select, none);
+}
+
+.hide { display: none; }
+
+// iPhone Hacks
+@media (max-width: 320px) and (orientation: portrait) {
+  //body, .view { min-height: 480px; }
+}
+@media (max-width: 568px) and (orientation: landscape) {
+  body, .view  { min-height: 320px; }
+}
+
+.tz0 {
+  @include prefixer(transform, translateZ(0));
+}
+

@@ -1,0 +1,33 @@
+.box {
+  position: absolute;
+  right: 5%;
+  left: 5%;
+  @include prefixer(transform, translateZ(0));
+}
+.box-centered {
+  display: table;
+  width: 90%;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.box-bottom {
+  bottom: 12*$space;
+}
+.box-bottom-low {
+  bottom: 12*$space;
+}
+@include break(tall){
+  .box-bottom {
+    bottom: 20*$space;
+  }
+  .box-bottom-low {
+    bottom: 14*$space;
+  }
+}
+@include break(x-tall) {
+  .box-bottom {
+    bottom: 25*$space;
+  }
+}
+
