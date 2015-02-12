@@ -53,4 +53,6 @@ For example:
 
 ---
 
-license MIT http://www.opensource.org/licenses/mit-license.php
+## License 
+
+[MIT](http://www.opensource.org/licenses/mit-license.php)
